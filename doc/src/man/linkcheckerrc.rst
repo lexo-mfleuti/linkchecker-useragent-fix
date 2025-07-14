@@ -569,6 +569,10 @@ daemon must be installed.
 **clamavconf=**\ *filename*
     Filename of **clamd.conf** config file.
 
+.. note::
+
+    The VirusCheck plugin does not support ClamAV >= 1.0 and is disabled.
+
 PdfParser
 ^^^^^^^^^
 
