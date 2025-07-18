@@ -41,35 +41,7 @@ jobs:
       - name: Install OS dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y clamav-daemon geoip-database libgeoip-dev gettext
-
-      - name: Make ClamAV cache directory writeable for cache action
-        run: |
-          sudo chown -R runner:docker /var/lib/clamav
-
-      - name: ClamAV cache
-        id: cache-clamav
-        uses: actions/cache@v4
-        with:
-          path: /var/lib/clamav
-          key: clamav-v1
-
-      - name: Restore ClamAV directory ownership
-        run: |
-          sudo chown -R clamav:clamav /var/lib/clamav
-
-      - name: Restart ClamAV Daemon
-        if: ${{ steps.cache-clamav.outputs.cache-hit == 'true' }}
-        run: |
-          sudo service clamav-daemon restart
-
-      - name: Download the ClamAV signature database
-        if: ${{ steps.cache-clamav.outputs.cache-hit != 'true' }}
-        run: |
-          sudo service clamav-freshclam stop
-          sudo freshclam
-          sudo service clamav-daemon restart
-          sudo service clamav-daemon status
+          sudo apt-get install -y geoip-database libgeoip-dev gettext
 
       - name: Git clone
         uses: actions/checkout@v4
@@ -97,10 +69,6 @@ jobs:
           python -m pip install -U pip
           python -m pip install -U hatchling hatch-vcs polib
           python -m pip install -U tox coverage
-
-      - name: Wait for ClamAV to be ready
-        run: |
-          while ! test -S /run/clamav/clamd.ctl; do printf "."; sleep 1; done
 
       - name: Run tests
         run: |
