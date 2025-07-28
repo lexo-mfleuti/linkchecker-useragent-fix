@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2000-2016 Bastian Kleineidam, 2010-2024 LinkChecker Authors
+# Copyright (C) 2000-2016 Bastian Kleineidam, 2010-2025 LinkChecker Authors
 # This file is distributed under the same license as the LinkChecker package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: LinkChecker 10.4.0.post49+g7cf5037e\n"
+"Project-Id-Version: LinkChecker 10.5.0.post14+g8c3a6f77\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-27 18:46+0000\n"
+"POT-Creation-Date: 2025-07-28 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -278,7 +278,7 @@ msgstr ""
 msgid "Standard text logger, logging URLs in keyword: argument fashion."
 msgstr ""
 
-#: ../../src/man/linkchecker.rst:261
+#: ../../src/man/linkchecker.rst:259
 msgid "**html**"
 msgstr ""
 
@@ -294,7 +294,7 @@ msgstr ""
 msgid "Log check result in CSV format with one URL per line."
 msgstr ""
 
-#: ../../src/man/linkchecker.rst:266
+#: ../../src/man/linkchecker.rst:265
 msgid "**gml**"
 msgstr ""
 
@@ -302,7 +302,7 @@ msgstr ""
 msgid "Log parent-child relations between linked URLs as a GML sitemap graph."
 msgstr ""
 
-#: ../../src/man/linkchecker.rst:269
+#: ../../src/man/linkchecker.rst:268
 msgid "**dot**"
 msgstr ""
 
@@ -326,7 +326,7 @@ msgstr ""
 msgid "Log check result as machine-readable XML."
 msgstr ""
 
-#: ../../src/man/linkchecker.rst:276
+#: ../../src/man/linkchecker.rst:275
 msgid "**sitemap**"
 msgstr ""
 
@@ -334,7 +334,7 @@ msgstr ""
 msgid "Log check result as an XML sitemap whose protocol is documented at https://www.sitemaps.org/protocol.html."
 msgstr ""
 
-#: ../../src/man/linkchecker.rst:279
+#: ../../src/man/linkchecker.rst:278
 msgid "**sql**"
 msgstr ""
 
@@ -342,7 +342,7 @@ msgstr ""
 msgid "Log check result as SQL script with INSERT commands. An example script to create the initial SQL table is included as create.sql."
 msgstr ""
 
-#: ../../src/man/linkchecker.rst:283
+#: ../../src/man/linkchecker.rst:281
 msgid "**failures**"
 msgstr ""
 
@@ -350,7 +350,7 @@ msgstr ""
 msgid "Suitable for cron jobs. Logs the check result into a file **$XDG_DATA_HOME/linkchecker/failures** which only contains entries with invalid URLs and the number of times they have failed."
 msgstr ""
 
-#: ../../src/man/linkchecker.rst:286
+#: ../../src/man/linkchecker.rst:285
 msgid "**none**"
 msgstr ""
 
@@ -390,7 +390,7 @@ msgstr ""
 msgid "Gives the path the cookies are value for; default path is **/**."
 msgstr ""
 
-#: ../../src/man/linkchecker.rst:307
+#: ../../src/man/linkchecker.rst:306
 msgid "**Set-cookie** (required)"
 msgstr ""
 
@@ -430,7 +430,7 @@ msgstr ""
 msgid "All URLs have to pass a preliminary syntax test. Minor quoting mistakes will issue a warning, all other invalid syntax issues are errors. After the syntax check passes, the URL is queued for connection checking. All connection check types are described below."
 msgstr ""
 
-#: ../../src/man/linkchecker.rst:373
+#: ../../src/man/linkchecker.rst:367
 msgid "HTTP links (**http:**, **https:**)"
 msgstr ""
 
@@ -442,7 +442,7 @@ msgstr ""
 msgid "HTML page contents are checked for recursion."
 msgstr ""
 
-#: ../../src/man/linkchecker.rst:380
+#: ../../src/man/linkchecker.rst:375
 msgid "Local files (**file:**)"
 msgstr ""
 
@@ -454,7 +454,7 @@ msgstr ""
 msgid "HTML or other parseable file contents are checked for recursion."
 msgstr ""
 
-#: ../../src/man/linkchecker.rst:395
+#: ../../src/man/linkchecker.rst:382
 msgid "Mail links (**mailto:**)"
 msgstr ""
 
@@ -478,7 +478,7 @@ msgstr ""
 msgid "Try to verify the address with the VRFY command. If we got an answer, print the verified address as an info."
 msgstr ""
 
-#: ../../src/man/linkchecker.rst:404
+#: ../../src/man/linkchecker.rst:397
 msgid "FTP links (**ftp:**)"
 msgstr ""
 
@@ -502,7 +502,7 @@ msgstr ""
 msgid "list the file with the NLST command"
 msgstr ""
 
-#: ../../src/man/linkchecker.rst:413
+#: ../../src/man/linkchecker.rst:406
 msgid "Unsupported links (**javascript:**, etc.)"
 msgstr ""
 
@@ -664,7 +664,7 @@ msgid "**linkchecker-out.**\\ *TYPE* - default logger file output name"
 msgstr ""
 
 #: ../../src/man/linkchecker.rst:532
-#: ../../src/man/linkcheckerrc.rst:632
+#: ../../src/man/linkcheckerrc.rst:636
 msgid "SEE ALSO"
 msgstr ""
 
@@ -696,7 +696,7 @@ msgstr ""
 msgid "checking"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:23
+#: ../../src/man/linkcheckerrc.rst:21
 msgid "**cookiefile=**\\ *filename*"
 msgstr ""
 
@@ -704,7 +704,7 @@ msgstr ""
 msgid "Read a file with initial cookie data. The cookie data format is explained in :manpage:`linkchecker(1)`. Command line option: :option:`--cookiefile`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:27
+#: ../../src/man/linkcheckerrc.rst:25
 msgid "**debugmemory=**\\ [**0**\\ \\|\\ **1**]"
 msgstr ""
 
@@ -712,7 +712,7 @@ msgstr ""
 msgid "Write memory allocation statistics to a file on exit, requires :pypi:`meliae`. The default is not to write the file. Command line option: none"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:34
+#: ../../src/man/linkcheckerrc.rst:29
 msgid "**localwebroot=**\\ *STRING*"
 msgstr ""
 
@@ -720,7 +720,7 @@ msgstr ""
 msgid "When checking absolute URLs inside local files, the given root directory is used as base URL. Note that the given directory must have URL syntax, so it must use a slash to join directories instead of a backslash. And the given directory must end with a slash. Command line option: none"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:38
+#: ../../src/man/linkcheckerrc.rst:36
 msgid "**recursionlevel=**\\ *NUMBER*"
 msgstr ""
 
@@ -728,7 +728,7 @@ msgstr ""
 msgid "Check recursively all links up to given depth. A negative depth will enable infinite recursion. Default depth is infinite. Command line option: :option:`--recursion-level`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:42
+#: ../../src/man/linkcheckerrc.rst:40
 msgid "**threads=**\\ *NUMBER*"
 msgstr ""
 
@@ -736,7 +736,7 @@ msgstr ""
 msgid "Generate no more than the given number of threads. Default number of threads is 10. To disable threading specify a non-positive number. Command line option: :option:`--threads`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:46
+#: ../../src/man/linkcheckerrc.rst:44
 msgid "**timeout=**\\ *NUMBER*"
 msgstr ""
 
@@ -744,7 +744,7 @@ msgstr ""
 msgid "Set the timeout for connection attempts in seconds. The default timeout is 60 seconds. Command line option: :option:`--timeout`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:51
+#: ../../src/man/linkcheckerrc.rst:48
 msgid "**aborttimeout=**\\ *NUMBER*"
 msgstr ""
 
@@ -752,7 +752,7 @@ msgstr ""
 msgid "Time to wait for checks to finish after the user aborts the first time (with Ctrl-C or the abort button). The default abort timeout is 300 seconds. Command line option: none"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:56
+#: ../../src/man/linkcheckerrc.rst:53
 msgid "**useragent=**\\ *STRING*"
 msgstr ""
 
@@ -760,7 +760,7 @@ msgstr ""
 msgid "Specify the User-Agent string to send to the HTTP server, for example \"Mozilla/4.0\". The default is \"LinkChecker/X.Y\" where X.Y is the current version of LinkChecker. Command line option: :option:`--user-agent`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:62
+#: ../../src/man/linkcheckerrc.rst:58
 msgid "**sslverify=**\\ [**0**\\ \\|\\ **1**\\ \\|\\ *filename*]"
 msgstr ""
 
@@ -768,7 +768,7 @@ msgstr ""
 msgid "If set to zero disables SSL certificate checking. If set to one (the default) enables SSL certificate checking with the provided CA certificate file. If a filename is specified, it will be used as the certificate file. Command line option: none"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:68
+#: ../../src/man/linkcheckerrc.rst:64
 msgid "**maxrunseconds=**\\ *NUMBER*"
 msgstr ""
 
@@ -776,7 +776,7 @@ msgstr ""
 msgid "Stop checking new URLs after the given number of seconds. Same as if the user stops (by hitting Ctrl-C) after the given number of seconds. The default is not to stop until all URLs are checked. Command line option: none"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:74
+#: ../../src/man/linkcheckerrc.rst:70
 msgid "**maxfilesizedownload=**\\ *NUMBER*"
 msgstr ""
 
@@ -784,7 +784,7 @@ msgstr ""
 msgid "Files larger than NUMBER bytes will be ignored, without downloading anything if accessed over http and an accurate Content-Length header was returned. No more than this amount of a file will be downloaded. The default is 5242880 (5 MB). Command line option: none"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:78
+#: ../../src/man/linkcheckerrc.rst:76
 msgid "**maxfilesizeparse=**\\ *NUMBER*"
 msgstr ""
 
@@ -792,7 +792,7 @@ msgstr ""
 msgid "Files larger than NUMBER bytes will not be parsed for links. The default is 1048576 (1 MB). Command line option: none"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:83
+#: ../../src/man/linkcheckerrc.rst:80
 msgid "**maxnumurls=**\\ *NUMBER*"
 msgstr ""
 
@@ -800,7 +800,7 @@ msgstr ""
 msgid "Maximum number of URLs to check. New URLs will not be queued after the given number of URLs is checked. The default is to queue and check all URLs. Command line option: none"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:91
+#: ../../src/man/linkcheckerrc.rst:85
 msgid "**maxrequestspersecond=**\\ *NUMBER*"
 msgstr ""
 
@@ -808,7 +808,7 @@ msgstr ""
 msgid "Limit the maximum number of HTTP requests per second to one host. The average number of requests per second is approximately one third of the maximum. Values less than 1 and at least 0.001 can be used. To use values greater than 10, the HTTP server must return a **LinkChecker** response header. The default is 10. Command line option: none"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:96
+#: ../../src/man/linkcheckerrc.rst:93
 msgid "**robotstxt=**\\ [**0**\\ \\|\\ **1**]"
 msgstr ""
 
@@ -816,7 +816,7 @@ msgstr ""
 msgid "When using http, fetch robots.txt, and confirm whether each URL should be accessed before checking. The default is to use robots.txt files. Command line option: :option:`--no-robots`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:99
+#: ../../src/man/linkcheckerrc.rst:98
 msgid "**allowedschemes=**\\ *NAME*\\ [**,**\\ *NAME*...]"
 msgstr ""
 
@@ -824,7 +824,7 @@ msgstr ""
 msgid "Allowed URL schemes as comma-separated list. Command line option: none"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:104
+#: ../../src/man/linkcheckerrc.rst:101
 msgid "**resultcachesize=**\\ *NUMBER*"
 msgstr ""
 
@@ -836,7 +836,7 @@ msgstr ""
 msgid "filtering"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:110
+#: ../../src/man/linkcheckerrc.rst:109
 msgid "**ignore=**\\ *REGEX* (`MULTILINE`_)"
 msgstr ""
 
@@ -844,7 +844,7 @@ msgstr ""
 msgid "Only check syntax of URLs matching the given regular expressions. Command line option: :option:`--ignore-url`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:114
+#: ../../src/man/linkcheckerrc.rst:112
 msgid "**ignorewarnings=**\\ *NAME*\\ [**,**\\ *NAME*...]"
 msgstr ""
 
@@ -852,7 +852,7 @@ msgstr ""
 msgid "Ignore the comma-separated list of warnings. See `WARNINGS`_ for the list of supported warnings. Messages are logged as information. Command line option: none"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:130
+#: ../../src/man/linkcheckerrc.rst:116
 msgid "**ignorewarningsforurls=**\\ *URL_REGEX* [*NAME_REGEX*] (`MULTILINE`_)"
 msgstr ""
 
@@ -868,7 +868,7 @@ msgstr ""
 msgid "Example:"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:140
+#: ../../src/man/linkcheckerrc.rst:138
 msgid "**internlinks=**\\ *REGEX*"
 msgstr ""
 
@@ -876,7 +876,7 @@ msgstr ""
 msgid "Regular expression to add more URLs recognized as internal links. Default is that URLs given on the command line are internal. Command line option: none"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:144
+#: ../../src/man/linkcheckerrc.rst:142
 msgid "**nofollow=**\\ *REGEX* (`MULTILINE`_)"
 msgstr ""
 
@@ -884,7 +884,7 @@ msgstr ""
 msgid "Check but do not recurse into URLs matching the given regular expressions. Command line option: :option:`--no-follow-url`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:148
+#: ../../src/man/linkcheckerrc.rst:146
 msgid "**checkextern=**\\ [**0**\\ \\|\\ **1**]"
 msgstr ""
 
@@ -896,7 +896,7 @@ msgstr ""
 msgid "authentication"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:164
+#: ../../src/man/linkcheckerrc.rst:153
 msgid "**entry=**\\ *REGEX* *USER* [*PASS*] (`MULTILINE`_)"
 msgstr ""
 
@@ -904,7 +904,7 @@ msgstr ""
 msgid "Provide individual username/password pairs for different links. In addition to a single login page specified with **loginurl** multiple FTP and HTTP (Basic Authentication) links are supported. Entries are a triple (URL regex, username, password) or a tuple (URL regex, username), where the entries are separated by whitespace. The password is optional and if missing it has to be entered at the commandline. If the regular expression matches the checked URL, the given username/password pair is used for authentication. The command line options :option:`-u` and :option:`-p` match every link and therefore override the entries given here. The first match wins. Command line option: :option:`-u`, :option:`-p`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:171
+#: ../../src/man/linkcheckerrc.rst:166
 msgid "**loginurl=**\\ *URL*"
 msgstr ""
 
@@ -928,7 +928,7 @@ msgstr ""
 msgid "The name attribute of the password input element. Default: **password**."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:181
+#: ../../src/man/linkcheckerrc.rst:177
 msgid "**loginextrafields=**\\ *NAME*\\ **:**\\ *VALUE* (`MULTILINE`_)"
 msgstr ""
 
@@ -940,7 +940,7 @@ msgstr ""
 msgid "output"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:195
+#: ../../src/man/linkcheckerrc.rst:189
 msgid "**fileoutput=**\\ *TYPE*\\ [**,**\\ *TYPE*...]"
 msgstr ""
 
@@ -948,7 +948,7 @@ msgstr ""
 msgid "Output to a file **linkchecker-out.**\\ *TYPE*, or **$XDG_DATA_HOME/linkchecker/failures** for the **failures** output type. Valid file output types are **text**, **html**, **sql**, **csv**, **gml**, **dot**, **xml**, **none** or **failures**. Default is no file output. The various output types are documented below. Note that you can suppress all console output with **output=none**. Command line option: :option:`--file-output`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:203
+#: ../../src/man/linkcheckerrc.rst:197
 msgid "**log=**\\ *TYPE*\\ [**/**\\ *ENCODING*]"
 msgstr ""
 
@@ -956,7 +956,7 @@ msgstr ""
 msgid "Specify the console output type as **text**, **html**, **sql**, **csv**, **gml**, **dot**, **xml**, **none** or **failures**. Default type is **text**. The various output types are documented below. The *ENCODING* specifies the output encoding, the default is that of your locale. Valid encodings are listed at https://docs.python.org/library/codecs.html#standard-encodings. Command line option: :option:`--output`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:207
+#: ../../src/man/linkcheckerrc.rst:205
 msgid "**verbose=**\\ [**0**\\ \\|\\ **1**]"
 msgstr ""
 
@@ -964,7 +964,7 @@ msgstr ""
 msgid "If set log all checked URLs once, overriding **warnings**. Default is to log only errors and warnings. Command line option: :option:`--verbose`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:210
+#: ../../src/man/linkcheckerrc.rst:209
 msgid "**warnings=**\\ [**0**\\ \\|\\ **1**]"
 msgstr ""
 
@@ -972,7 +972,7 @@ msgstr ""
 msgid "If set log warnings. Default is to log warnings. Command line option: :option:`--no-warnings`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:219
+#: ../../src/man/linkcheckerrc.rst:212
 msgid "**ignoreerrors=**\\ *URL_REGEX* [*MESSAGE_REGEX*] (`MULTILINE`_)"
 msgstr ""
 
@@ -980,7 +980,7 @@ msgstr ""
 msgid "Specify regular expressions to ignore errors for matching URLs, one per line. A second regular expression can be specified per line to only ignore matching error messages per corresponding URL. If the second expression is omitted, all errors are ignored. In contrast to filtering_, this happens *after* checking, which allows checking URLs despite certain expected and tolerable errors. Default is to not ignore any errors. Example:"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:234
+#: ../../src/man/linkcheckerrc.rst:232
 msgid "**status=**\\ [**0**\\ \\|\\ **1**]"
 msgstr ""
 
@@ -988,7 +988,7 @@ msgstr ""
 msgid "Control printing URL checker status messages. Default is 1. Command line option: :option:`--no-status`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:243
+#: ../../src/man/linkcheckerrc.rst:239
 msgid "**debug=**\\ *STRING*\\ [**,**\\ *STRING*...]"
 msgstr ""
 
@@ -996,7 +996,7 @@ msgstr ""
 msgid "Print debugging output for the given logger. Available debug loggers are **cmdline**, **checking**, **cache**, **plugin** and **all**. **all** is an alias for all available loggers. Command line option: :option:`--debug`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:252
+#: ../../src/man/linkcheckerrc.rst:248
 msgid "**quiet=**\\ [**0**\\ \\|\\ **1**]"
 msgstr ""
 
@@ -1008,7 +1008,7 @@ msgstr ""
 msgid "text"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:262
+#: ../../src/man/linkcheckerrc.rst:260
 #: ../../src/man/linkcheckerrc.rst:310
 #: ../../src/man/linkcheckerrc.rst:320
 #: ../../src/man/linkcheckerrc.rst:330
@@ -1025,7 +1025,7 @@ msgstr ""
 msgid "Specify output filename for text logging. Default filename is **linkchecker-out.txt**. Command line option: :option:`--file-output`"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:266
+#: ../../src/man/linkcheckerrc.rst:264
 #: ../../src/man/linkcheckerrc.rst:312
 #: ../../src/man/linkcheckerrc.rst:322
 #: ../../src/man/linkcheckerrc.rst:332
@@ -1041,15 +1041,15 @@ msgstr ""
 msgid "Comma-separated list of parts that have to be logged. See `LOGGER PARTS`_ below. Command line option: none"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:270
-#: ../../src/man/linkcheckerrc.rst:315
-#: ../../src/man/linkcheckerrc.rst:325
+#: ../../src/man/linkcheckerrc.rst:268
+#: ../../src/man/linkcheckerrc.rst:314
+#: ../../src/man/linkcheckerrc.rst:324
 #: ../../src/man/linkcheckerrc.rst:334
 #: ../../src/man/linkcheckerrc.rst:352
 #: ../../src/man/linkcheckerrc.rst:366
-#: ../../src/man/linkcheckerrc.rst:389
-#: ../../src/man/linkcheckerrc.rst:399
-#: ../../src/man/linkcheckerrc.rst:409
+#: ../../src/man/linkcheckerrc.rst:388
+#: ../../src/man/linkcheckerrc.rst:398
+#: ../../src/man/linkcheckerrc.rst:408
 #: ../../src/man/linkcheckerrc.rst:418
 msgid "**encoding=**\\ *STRING*"
 msgstr ""
@@ -1058,7 +1058,7 @@ msgstr ""
 msgid "Valid encodings are listed in https://docs.python.org/library/codecs.html#standard-encodings. Default encoding is the system default locale encoding."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:274
+#: ../../src/man/linkcheckerrc.rst:272
 msgid "**wraplength=**\\ *NUMBER*"
 msgstr ""
 
@@ -1066,7 +1066,7 @@ msgstr ""
 msgid "The number of characters at which to wrap each message line. The default is 65. Command line option: none"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:282
+#: ../../src/man/linkcheckerrc.rst:276
 msgid "*color\\**"
 msgstr ""
 
@@ -1154,7 +1154,7 @@ msgstr ""
 msgid "Set download time color. Default is **default**."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:305
+#: ../../src/man/linkcheckerrc.rst:304
 msgid "**colorreset=**\\ *STRING*"
 msgstr ""
 
@@ -1204,7 +1204,7 @@ msgid "csv"
 msgstr ""
 
 #: ../../src/man/linkcheckerrc.rst:336
-#: ../../src/man/linkcheckerrc.rst:357
+#: ../../src/man/linkcheckerrc.rst:356
 msgid "**separator=**\\ *CHAR*"
 msgstr ""
 
@@ -1220,7 +1220,7 @@ msgstr ""
 msgid "Set CSV quote character. Default is a double quote (**\"**)."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:343
+#: ../../src/man/linkcheckerrc.rst:340
 msgid "**dialect=**\\ *STRING*"
 msgstr ""
 
@@ -1296,7 +1296,7 @@ msgstr ""
 msgid "Set HTML error color. Default is **#db4930**."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:381
+#: ../../src/man/linkcheckerrc.rst:380
 msgid "**colorok=**"
 msgstr ""
 
@@ -1320,7 +1320,7 @@ msgstr ""
 msgid "sitemap"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:421
+#: ../../src/man/linkcheckerrc.rst:420
 msgid "**priority=**\\ *FLOAT*"
 msgstr ""
 
@@ -1328,7 +1328,7 @@ msgstr ""
 msgid "A number between 0.0 and 1.0 determining the priority. The default priority for the first URL is 1.0, for all child URLs 0.5."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:424
+#: ../../src/man/linkcheckerrc.rst:423
 msgid "**frequency=**\\ [**always**\\ \\|\\ **hourly**\\ \\|\\ **daily**\\ \\|\\ **weekly**\\ \\|\\ **monthly**\\ \\|\\ **yearly**\\ \\|\\ **never**]"
 msgstr ""
 
@@ -1452,7 +1452,7 @@ msgstr ""
 msgid "the blurb at the beginning, \"starting at ...\""
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:458
+#: ../../src/man/linkcheckerrc.rst:457
 msgid "**outro**"
 msgstr ""
 
@@ -1500,7 +1500,7 @@ msgstr ""
 msgid "Define a regular expression which prints a warning if it matches any content of the checked link. This applies only to valid pages, so we can get their content."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:522
+#: ../../src/man/linkcheckerrc.rst:516
 msgid "**warningregex=**\\ *REGEX*"
 msgstr ""
 
@@ -1520,7 +1520,7 @@ msgstr ""
 msgid "Check SSL certificate expiration date. Only internal https: links will be checked. A domain will only be checked once to avoid duplicate warnings."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:532
+#: ../../src/man/linkcheckerrc.rst:531
 msgid "**sslcertwarndays=**\\ *NUMBER*"
 msgstr ""
 
@@ -1548,7 +1548,7 @@ msgstr ""
 msgid "Print HTTP headers in URL info."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:553
+#: ../../src/man/linkcheckerrc.rst:551
 msgid "**prefixes=**\\ *prefix1*\\ [,*prefix2*]..."
 msgstr ""
 
@@ -1572,7 +1572,7 @@ msgstr ""
 msgid "Checks the page content for virus infections with clamav. A local clamav daemon must be installed."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:570
+#: ../../src/man/linkcheckerrc.rst:569
 msgid "**clamavconf=**\\ *filename*"
 msgstr ""
 
@@ -1580,174 +1580,178 @@ msgstr ""
 msgid "Filename of **clamd.conf** config file."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:573
+#: ../../src/man/linkcheckerrc.rst:574
+msgid "The VirusCheck plugin does not support ClamAV >= 1.0 and is disabled."
+msgstr ""
+
+#: ../../src/man/linkcheckerrc.rst:577
 msgid "PdfParser"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:575
+#: ../../src/man/linkcheckerrc.rst:579
 msgid "Parse PDF files for URLs to check. Needs the :pypi:`pdfminer.six` Python package installed."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:579
+#: ../../src/man/linkcheckerrc.rst:583
 msgid "WordParser"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:581
+#: ../../src/man/linkcheckerrc.rst:585
 msgid "Parse Word files for URLs to check. Needs the :pypi:`pywin32` Python extension installed."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:585
+#: ../../src/man/linkcheckerrc.rst:589
 msgid "MarkdownCheck"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:587
+#: ../../src/man/linkcheckerrc.rst:591
 msgid "Parse Markdown files for URLs to check."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:590
+#: ../../src/man/linkcheckerrc.rst:593
 msgid "**filename_re=**\\ *REGEX*"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:590
+#: ../../src/man/linkcheckerrc.rst:594
 msgid "Regular expression matching the names of Markdown files."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:593
+#: ../../src/man/linkcheckerrc.rst:597
 msgid "WARNINGS"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:595
+#: ../../src/man/linkcheckerrc.rst:599
 msgid "The following warnings are recognized by **ignorewarnings** and **ignorewarningsforurls**:"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:598
+#: ../../src/man/linkcheckerrc.rst:602
 msgid "**file-anchorcheck-directory**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:599
+#: ../../src/man/linkcheckerrc.rst:603
 msgid "A local directory with an anchor, not supported by AnchorCheck."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:600
+#: ../../src/man/linkcheckerrc.rst:604
 msgid "**file-missing-slash**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:601
+#: ../../src/man/linkcheckerrc.rst:605
 msgid "The file: URL is missing a trailing slash."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:602
+#: ../../src/man/linkcheckerrc.rst:606
 msgid "**file-system-path**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:603
+#: ../../src/man/linkcheckerrc.rst:607
 msgid "The file: path is not the same as the system specific path."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:604
+#: ../../src/man/linkcheckerrc.rst:608
 msgid "**ftp-missing-slash**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:605
+#: ../../src/man/linkcheckerrc.rst:609
 msgid "The ftp: URL is missing a trailing slash."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:606
+#: ../../src/man/linkcheckerrc.rst:610
 msgid "**http-cookie-store-error**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:607
+#: ../../src/man/linkcheckerrc.rst:611
 msgid "An error occurred while storing a cookie."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:608
+#: ../../src/man/linkcheckerrc.rst:612
 msgid "**http-empty-content**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:609
+#: ../../src/man/linkcheckerrc.rst:613
 msgid "The URL had no content."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:610
+#: ../../src/man/linkcheckerrc.rst:614
 msgid "**http-rate-limited**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:611
+#: ../../src/man/linkcheckerrc.rst:615
 msgid "Too many HTTP requests."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:612
+#: ../../src/man/linkcheckerrc.rst:616
 msgid "**http-redirected**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:613
+#: ../../src/man/linkcheckerrc.rst:617
 msgid "Redirected to a different URL."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:614
+#: ../../src/man/linkcheckerrc.rst:618
 msgid "**mail-no-mx-host**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:615
+#: ../../src/man/linkcheckerrc.rst:619
 msgid "The mail MX host could not be found."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:616
+#: ../../src/man/linkcheckerrc.rst:620
 msgid "**url-content-size-zero**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:617
+#: ../../src/man/linkcheckerrc.rst:621
 msgid "The URL content size is zero."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:618
+#: ../../src/man/linkcheckerrc.rst:622
 msgid "**url-content-too-large**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:619
+#: ../../src/man/linkcheckerrc.rst:623
 msgid "The URL content size is too large."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:620
+#: ../../src/man/linkcheckerrc.rst:624
 msgid "**url-content-type-unparseable**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:621
+#: ../../src/man/linkcheckerrc.rst:625
 msgid "The URL content type is not parseable."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:622
+#: ../../src/man/linkcheckerrc.rst:626
 msgid "**url-effective-url**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:623
+#: ../../src/man/linkcheckerrc.rst:627
 msgid "The effective URL is different from the original."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:624
+#: ../../src/man/linkcheckerrc.rst:628
 msgid "**url-error-getting-content**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:625
+#: ../../src/man/linkcheckerrc.rst:629
 msgid "Could not get the content of the URL."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:626
+#: ../../src/man/linkcheckerrc.rst:630
 msgid "**url-obfuscated-ip**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:627
+#: ../../src/man/linkcheckerrc.rst:631
 msgid "The IP is obfuscated."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:629
+#: ../../src/man/linkcheckerrc.rst:632
 msgid "**url-whitespace**"
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:629
+#: ../../src/man/linkcheckerrc.rst:633
 msgid "The URL contains leading or trailing whitespace."
 msgstr ""
 
-#: ../../src/man/linkcheckerrc.rst:634
+#: ../../src/man/linkcheckerrc.rst:638
 msgid ":manpage:`linkchecker(1)`"
 msgstr ""
