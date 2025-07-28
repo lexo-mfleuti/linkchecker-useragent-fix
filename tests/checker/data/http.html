@@ -1,5 +1,5 @@
 <link rel="dns-prefetch" href="//www.example.org">
-<link rel="dns-prefetch" href="http://www.example.com/">
+<link rel="dns-prefetch" href="https://linkchecker.github.io/">
 <a b=c "boo" href="http://www.garantiertnixgutt.bla/">bad url</a>
 <!-- check cache key with query -->
 <a href="/?d=directory&amp;p=page">should not be cached</a>
@@ -18,9 +18,9 @@
  title="CSS urls">
 
 <!-- object with codebase -->
-<object classid="clsid:12345-67890" codebase="http://example.org/foo/ #a=1,2,3">
+<object classid="clsid:12345-67890" codebase="https://linkchecker.github.io/foo/ #a=1,2,3">
 
 <!-- <a href=http://nocheckin> no check because of comment -->
 
 <!-- Invalid URL -->
-<a href="http://.example.org/">Error</a>
+<a href="https://.linkchecker.github.io/">Error</a>

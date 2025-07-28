@@ -14,9 +14,9 @@ cache key dns://www.example.org
 real url dns://www.example.org
 valid
 
-url dns://www.example.com
-cache key dns://www.example.com
-real url dns://www.example.com
+url dns://linkchecker.github.io
+cache key dns://linkchecker.github.io
+real url dns://linkchecker.github.io
 valid
 
 url http://www.garantiertnixgutt.bla/
@@ -65,13 +65,13 @@ real url http://localhost:%(port)d/tests/checker/data/file.txt
 name CSS urls
 valid
 
-url http://example.org/foo/ #a=1,2,3
-cache key http://example.org/foo/%%20
-real url http://example.org/foo/%%20#a=1,2,3
+url https://linkchecker.github.io/foo/ #a=1,2,3
+cache key https://linkchecker.github.io/foo/%%20
+real url https://linkchecker.github.io/foo/%%20#a=1,2,3
 error
 
-url http://.example.org/
-cache key http://.example.org/
-real url http://.example.org/
+url https://.linkchecker.github.io/
+cache key https://.linkchecker.github.io/
+real url https://.linkchecker.github.io/
 name Error
 error
