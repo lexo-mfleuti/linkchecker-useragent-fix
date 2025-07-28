@@ -4,9 +4,9 @@ real url file://%(curdir)s/%(datadir)s/misc.html
 name %(datadir)s/misc.html
 valid
 
-url http://www.example.com/
-cache key http://www.example.com/
-real url http://www.example.com/
+url https://linkchecker.github.io/
+cache key https://linkchecker.github.io/
+real url https://linkchecker.github.io/
 valid
 
 url favicon.ico

@@ -3,9 +3,9 @@ cache key http://localhost:%(port)d/%(datadir)s/http_quotes.html
 real url http://localhost:%(port)d/%(datadir)s/http_quotes.html
 valid
 
-url http://example.com/
-cache key http://example.com/
-real url http://example.com/
+url https://linkchecker.github.io/
+cache key https://linkchecker.github.io/
+real url https://linkchecker.github.io/
 name unquoted
 valid
 
@@ -15,8 +15,8 @@ real url http://localhost:%(port)d/stalter%%26sohn
 name unquoted ampersand
 error
 
-url http://www.example.com/"
-cache key http://www.example.com/%%22
-real url http://www.example.com/%%22
+url https://linkchecker.github.io/"
+cache key https://linkchecker.github.io/%%22
+real url https://linkchecker.github.io/%%22
 name no beginning quote example
 error
