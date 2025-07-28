@@ -1,3 +1,15 @@
+10.6.0 (released 28.07.2025)
+
+Changes:
+- The VirusCheck plugin is disabled
+- litecoin and ltclightning added to the list of ignored schemes
+
+Fixes
+- When a http URL was redirected to a https URL, the certificate of the https
+  connection was not being verified
+- TestHttp.test_html_internet was broken by Python >= 3.12.6
+
+
 10.5.0 (released 03.09.2024)
 
 Features:
