@@ -4,8 +4,8 @@ real url file://%(curdir)s/%(datadir)s/Bookmarks
 name %(datadir)s/Bookmarks
 valid
 
-url http://example.com/
-cache key http://example.com/
-real url http://example.com/
+url https://linkchecker.github.io/
+cache key https://linkchecker.github.io/
+real url https://linkchecker.github.io/
 name Testlink
 valid

@@ -43,6 +43,7 @@ Changelog.linkchecker*
 .tox
 tests/checker/data/https_cert.pem
 tests/checker/data/https_key.pem
+tests/checker/data/plist_binary/Bookmarks.plist
 coverage.xml
 doc/html
 doc/src/_build

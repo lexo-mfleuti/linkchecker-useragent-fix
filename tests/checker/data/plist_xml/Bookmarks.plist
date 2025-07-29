@@ -24,7 +24,7 @@
 						<string>Imadoofus</string>
 					</dict>
 					<key>URLString</key>
-					<string>http://www.example.com/</string>
+					<string>https://linkchecker.github.io/</string>
 					<key>WebBookmarkType</key>
 					<string>WebBookmarkTypeLeaf</string>
 					<key>WebBookmarkUUID</key>
@@ -40,7 +40,7 @@
 								<string>Imanotherdoofus</string>
 							</dict>
 							<key>URLString</key>
-							<string>http://www.example.net/</string>
+							<string>https://linkchecker.github.io/linkchecker/</string>
 							<key>WebBookmarkType</key>
 							<string>WebBookmarkTypeLeaf</string>
 							<key>WebBookmarkUUID</key>

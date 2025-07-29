@@ -17,8 +17,9 @@
 Test bookmark file parsing.
 """
 from . import LinkCheckTest
-from .. import need_network
+from .. import get_file, need_network
 import os
+import plistlib
 
 
 class TestBookmarks(LinkCheckTest):
@@ -49,4 +50,10 @@ class TestBookmarks(LinkCheckTest):
     @need_network
     def test_safari_bookmarks_binary(self):
         # Safari bookmark file parsing (for binary plist files)
+        plist_binary_file = get_file(os.path.join("plist_binary", "Bookmarks.plist"))
+        plist_xml_file = get_file(os.path.join("plist_xml", "Bookmarks.plist"))
+        with open(plist_xml_file, "rb") as fx:
+            pl = plistlib.load(fx)
+            with open(plist_binary_file, "wb") as fb:
+                plistlib.dump(pl, fb, fmt=plistlib.FMT_BINARY)
         self.file_test(os.path.join("plist_binary", "Bookmarks.plist"))

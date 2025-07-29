@@ -6,14 +6,14 @@ real url file://%(curdir)s/%(datadir)s/plist_xml/Bookmarks.plist
 name %(datadir)s/plist_xml/Bookmarks.plist
 valid
 
-url http://www.example.com/
-cache key http://www.example.com/
-real url http://www.example.com/
+url https://linkchecker.github.io/
+cache key https://linkchecker.github.io/
+real url https://linkchecker.github.io/
 name Imadoofus
 valid
 
-url http://www.example.net/
-cache key http://www.example.net/
-real url http://www.example.net/
+url https://linkchecker.github.io/linkchecker/
+cache key https://linkchecker.github.io/linkchecker/
+real url https://linkchecker.github.io/linkchecker/
 name Imanotherdoofus
 valid
