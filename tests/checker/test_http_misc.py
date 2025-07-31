@@ -16,6 +16,7 @@
 """
 Test http checking.
 """
+from .. import get_file
 from .httpserver import HttpServerTest
 from tests import need_network
 
@@ -32,15 +33,21 @@ class TestHttpMisc(HttpServerTest):
         self.file_test("sitemapindex.xml")
 
     def swf_test(self):
+        with open(get_file("test.swf"), "wb") as fh:
+            fh.write(b"\x71\xFC\x27\x34\x33\x30\x39\x20\x75\x71\x30\x27\x33\x34"
+                     b"\x20\x74\x75\x71\xFC\x74\x39\x20\x71\x65\xFC\x72\x67\x6A"
+                     b"\x73\x61\x64\xF6\x66\x67\x20\x6A\x69\x61\x73\x23"
+                     b"https://linkchecker.github.io/"
+                     b"\xB0\xB0\x0A")
         url = self.get_url("test.swf")
         resultlines = [
             "url %s" % url,
             "cache key %s" % url,
             "real url %s" % url,
             "valid",
-            "url http://www.example.org/",
-            "cache key http://www.example.org/",
-            "real url http://www.example.org/",
+            "url https://linkchecker.github.io/",
+            "cache key https://linkchecker.github.io/",
+            "real url https://linkchecker.github.io/",
             "valid",
         ]
         self.direct(url, resultlines, recursionlevel=1)
