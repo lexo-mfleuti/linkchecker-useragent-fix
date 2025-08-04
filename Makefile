@@ -18,7 +18,7 @@ test: linkcheck/_release.py
 	tox -e py
 
 upload:
-	twine upload dist/LinkChecker*
+	twine upload dist/linkchecker*
 
 homepage: linkcheck/_release.py
 	make -C doc html
