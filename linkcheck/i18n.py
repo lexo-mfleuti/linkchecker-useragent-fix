@@ -38,9 +38,9 @@ def init(domain, directory):
     builtins.__dict__['_n'] = translator.ngettext
 
 
-def get_encoded_writer(out=sys.stdout, encoding=None, errors='replace'):
+def get_encoded_writer(out_buffer=sys.stdout.buffer, encoding=None, errors='replace'):
     """Get wrapped output writer with given encoding and error handling."""
     if encoding is None:
         encoding = default_encoding
     Writer = codecs.getwriter(encoding)
-    return Writer(out.buffer, errors)
+    return Writer(out_buffer, errors)

@@ -19,7 +19,6 @@ Analyze a memory dump by the meliae module.
 """
 import sys
 import os
-import codecs
 import html
 from linkcheck import strformat
 
@@ -57,7 +56,7 @@ def get_file(type_str, open_files, basedir):
     if type_str not in open_files:
         filename = type_str + ".html"
         encoding = "utf-8"
-        fd = codecs.open(os.path.join(basedir, filename), "w", encoding)
+        fd = open(os.path.join(basedir, filename), "w", encoding=encoding)
         open_files[type_str] = fd
         write_html_header(fd, type_str, encoding)
     return open_files[type_str]

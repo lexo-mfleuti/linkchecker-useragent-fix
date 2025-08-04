@@ -246,7 +246,8 @@ class _Logger(abc.ABC):
             return i18n.get_encoded_writer(
                 encoding=self.output_encoding, errors=self.codec_errors
             )
-        return codecs.open(self.filename, "wb", self.output_encoding, self.codec_errors)
+        return i18n.get_encoded_writer(
+            open(self.filename, "wb"), self.output_encoding, self.codec_errors)
 
     def close_fileoutput(self):
         """

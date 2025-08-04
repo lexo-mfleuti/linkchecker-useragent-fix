@@ -57,7 +57,7 @@ the ISO standard.
 
 import os
 import logging
-import types
+
 from .fileutil import has_module, is_tty
 
 if os.name == 'nt':
@@ -314,13 +314,6 @@ class ColoredStreamHandler(logging.StreamHandler):
         """
         color = self.get_color(record)
         msg = self.format(record)
-        if not hasattr(types, "UnicodeType"):
-            # no unicode support
-            self.stream.write("%s" % msg, color=color)
-        else:
-            try:
-                self.stream.write("%s" % msg, color=color)
-            except UnicodeError:
-                self.stream.write("%s" % msg.encode("UTF-8"), color=color)
+        self.stream.write(msg, color=color)
         self.stream.write(os.linesep)
         self.flush()

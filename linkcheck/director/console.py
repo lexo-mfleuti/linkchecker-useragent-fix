@@ -22,7 +22,7 @@ import time
 from .. import i18n, configuration, strformat, better_exchook2
 
 # Output to stdout and stderr, encoded with the default encoding
-stderr = i18n.get_encoded_writer(out=sys.stderr)
+stderr = i18n.get_encoded_writer(out_buffer=sys.stderr.buffer)
 stdout = i18n.get_encoded_writer()
 
 
