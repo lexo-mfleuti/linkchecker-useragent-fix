@@ -20,14 +20,15 @@ Main package for link checking.
 # version checks
 import sys
 
-if sys.version_info < (3, 9, 0, 'final', 0):
+if sys.version_info < (3, 10, 0, 'final', 0):
     import platform
 
     raise SystemExit(
-        "This program requires Python 3.9 or later instead of %s."
+        "This program requires Python 3.10 or later instead of %s."
         % platform.python_version()
     )
 
+import importlib.resources
 import os
 import re
 
@@ -43,11 +44,6 @@ from .logconf import (
 
 COMMAND_NAME = "linkchecker"
 PACKAGE_NAME = __spec__.parent
-
-
-def module_path():
-    """Return absolute directory of system executable."""
-    return os.path.dirname(os.path.abspath(sys.executable))
 
 
 class LinkCheckerError(Exception):
@@ -102,8 +98,7 @@ def init_i18n():
     if 'LOCPATH' in os.environ:
         locdir = os.environ['LOCPATH']
     else:
-        # Need Python 3.9 for importlib.resources.files
-        locdir = os.path.join(__path__[0], 'data', 'locale')
+        locdir = importlib.resources.files(f'{PACKAGE_NAME}.data').joinpath('locale')
     i18n.init(COMMAND_NAME, locdir)
     # install translated log level names
     import logging

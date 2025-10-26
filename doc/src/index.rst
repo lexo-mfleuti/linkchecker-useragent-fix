@@ -10,7 +10,7 @@ Introduction
 LinkChecker is a free, `GPL <https://www.gnu.org/licenses/old-licenses/gpl-2.0.html>`_
 licensed website validator.
 LinkChecker checks links in web documents or full websites.
-It runs on Python 3 systems, requiring Python 3.9 or later.
+It runs on Python 3 systems, requiring Python 3.10 or later.
 
 Visit the project on `GitHub <https://github.com/linkchecker/linkchecker>`_.
 
@@ -19,10 +19,10 @@ Installation
 
 .. code-block:: console
 
-   $ pip3 install linkchecker
+   $ pipx install linkchecker
 
-The version in the pip repository may be old, to find out how to get the latest
-code, plus platform-specific information and other advice see the
+The version in the Python Package Index may be old, to find out how to get the
+latest code, plus platform-specific information and other advice see the
 :doc:`installation document <install>`.
 
 Basic usage

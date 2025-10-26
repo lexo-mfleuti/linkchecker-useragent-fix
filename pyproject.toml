@@ -6,12 +6,12 @@ readme = "README.rst"
 keywords = ["link", "url", "site", "checking", "crawling", "verification", "validation"]
 authors = [{name = "LinkChecker Authors"}]
 maintainers = [{name = "LinkChecker Authors"}]
+license = "GPL-2.0-or-later"
+license-files = ["COPYING"]
 classifiers = [
     "Topic :: Internet :: WWW/HTTP :: Site Management :: Link Checking",
     "Development Status :: 5 - Production/Stable",
-    "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
     "Programming Language :: Python",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -19,7 +19,7 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
 ]
 
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 
 dependencies = [
     "requests >= 2.20",
@@ -29,7 +29,7 @@ dependencies = [
 
 [build-system]
 requires = [
-    "hatchling >= 1.8.0",
+    "hatchling >= 1.26.0",
     "hatch-vcs",
     "setuptools-scm >= 7.1.0",
 ]
